@@ -11,3 +11,7 @@ To read/decrypt a password from the store one can use the image/container like a
             -v </path/to/private/gpg_key.asc>:/tmp/key.asc \
             -e PASSPHRASE=<passphrase_of_key> \
             iteratec/passwordstore <name_of_password_to_decrypt>
+
+The gpg private key can be exported via
+
+        gpg2 --export-secret-key -o gpg_key.asc <ID_of_your_key>
