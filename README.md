@@ -10,4 +10,4 @@ To read/decrypt a password from the store one can use the image/container like a
             -v </path/to/local/.password-store>:/root/.password-store \
             -v </path/to/private/gpg_key.asc>:/tmp/key.asc \
             -e PASSPHRASE=<passphrase_of_key> \
-            iteratec/passwordstore
+            iteratec/passwordstore <name_of_password_to_decrypt>
