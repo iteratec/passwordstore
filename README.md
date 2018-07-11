@@ -17,4 +17,4 @@ The gpg private key can be exported via
 
         gpg2 --export-secret-key -o gpg_key.asc <ID_of_your_key>
 
-The container decrypts a symmetrically encrypted key before it uses it if one sets env variable `KEY_ENCRYPTED=true`.
+The container decrypts a symmetrically encrypted key before it uses it if one sets env variable `KEY_ENCRYPTED=true`. It uses given passphrase to decrypt key.
